@@ -781,7 +781,9 @@ void ACS_INIT(byte sensity)
     */
     Port_WriteBit(IR_left,PORT_ON);
     Port_WriteBit(IR_right,PORT_ON);
-    Timer_T3PWM(51,sensity,PS_8);
+
+//! Timer_T3PWM(51,sensity,PS_8);
+    Timer_T3PWM(409,sensity,PS_1);
 }
 
 //---[ IR-UART-INIT ]-----------------------------------------------------------

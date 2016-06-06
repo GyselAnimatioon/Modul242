@@ -1,7 +1,8 @@
 void main(void) {
     PRO_BOT128_INIT();
     LCD_INIT();
-    ACS_INIT(2);
+    // Richtwerte Hinderniserkennung: 8:15cm 6:11cm 5:9cm 4:6cm 3:4cm
+    ACS_INIT(6);
 
     ENC_LED_ON();
     DRIVE_ON();

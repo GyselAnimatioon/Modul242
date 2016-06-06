@@ -13,8 +13,8 @@
       <Files>
         <0 value="modul242.cc"/>
         <1 value="I2C_LCD_LIB.cc"/>
-        <2 value="PRO-BOT128_Lib_V31.cc"/>
-        <3 value="SOUND_LIB_V11.cc"/>
+        <2 value="SOUND_LIB_V11.cc"/>
+        <3 value="..\Test Peripherie CC neu\MyACSTest\PRO-BOT128_Lib_V32.cc"/>
       </Files>
     </Proj1>
   </Projects>
