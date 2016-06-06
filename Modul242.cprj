@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<DOCUMENT>
+  <IDEVersion value="543"/>
+  <LibraryForm.rsPropSaver1>
+    <LMDCheckListBox1.Items value="DCF_Lib.cc&cr;&lf;IntFunc_Lib.cc&cr;&lf;Key_Lib.cc&cr;&lf;LCD_Lib.cc&cr;&lf;String_Lib.cc&cr;&lf;"/>
+    <LMDStrList1.Items value="0&cr;&lf;1&cr;&lf;0&cr;&lf;0&cr;&lf;0&cr;&lf;"/>
+  </LibraryForm.rsPropSaver1>
+  <Projects>
+    <Proj1>
+      <PrjChip value="2"/>
+      <PrjName value="Modul242"/>
+      <PrjOptions value="0"/>
+      <Files>
+        <0 value="modul242.cc"/>
+        <1 value="I2C_LCD_LIB.cc"/>
+        <2 value="PRO-BOT128_Lib_V31.cc"/>
+        <3 value="SOUND_LIB_V11.cc"/>
+      </Files>
+    </Proj1>
+  </Projects>
+</DOCUMENT>
