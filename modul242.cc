@@ -1,41 +1,32 @@
 void main(void) {
     PRO_BOT128_INIT();
     LCD_INIT();
-    // Richtwerte Hinderniserkennung: 8:15cm 6:11cm 5:9cm 4:6cm 3:4cm
     ACS_INIT(6);
 
     ENC_LED_ON();
     DRIVE_ON();
 
-    int speedL;
-    speedL = 180;
-    int speedR;
-    speedR = 180;
+    int speedL, speedR;
+    int links, rechts;
 
     while (1) {
         MOTOR_POWER(speedL,speedR);
+        speedL = 180;
+        speedR = 180;
         if(ACS_LEFT() && ACS_RIGHT()) {
-            speedL = 180;
-            speedR = 180;
             MOTOR_DIR(1,1);
-            setText("Fährt");
+            setText("Fahren");
         } else if(!ACS_LEFT() && !ACS_RIGHT()) {
             speedL = 250;
             speedR = 250;
             MOTOR_DIR(0,1);
-            setText("Rueckwerts");
+            setText("Schnelles Drehen");
         } else if(!ACS_LEFT()) {
-            speedL = 180;
-            speedR = 180;
             MOTOR_DIR(1,0);
-            setText("Links");
+            setText("Rechts Drehen");
         } else if(!ACS_RIGHT()) {
-            speedL = 180;
-            speedR = 180;
             MOTOR_DIR(0,1);
-            setText("Rechts");
-        } else {
-            setText("ELSE");
+            setText("Links Drehen");
         }
     }
 }
